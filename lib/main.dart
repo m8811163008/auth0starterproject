@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mjcoffee/screens/home.dart';
 import 'package:mjcoffee/screens/menu.dart';
@@ -124,6 +124,7 @@ Future<void> main() async {
         // ),
         MaterialApp.router(
           routeInformationParser: router.routeInformationParser,
+          routeInformationProvider: router.routeInformationProvider,
           routerDelegate: router.routerDelegate,
           debugShowCheckedModeBanner: false,
           themeMode: ThemeMode.system,
